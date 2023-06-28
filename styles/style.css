@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-oxford-blue: hsla(212, 100%, 17%, 1);
+  --clr-oxford-blue-3: hsla(219, 100%, 10%, 1);
+  --clr-delft-blue: hsla(220, 29%, 28%, 1);
+  --clr-slate-gray: hsla(222, 11%, 54%, 1);
+  --clr-cherry-blossom-pink: hsla(345, 100%, 85%, 1);
+  --clr-bakermiller-pink: hsla(345, 100%, 78%, 1);
+  --clr-russian-violet: hsla(255, 45%, 18%, 1);
+  --clr-lilac: hsla(292, 28%, 68%, 1);
+  --clr-cornsilk: hsla(52, 94%, 94%, 1);
+  --clr-earth-yellow: hsla(32, 65%, 62%, 1);
+  --clr-tigers-eye: hsla(28, 67%, 44%, 1);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(249, 244, 244);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
+}
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-side {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 1rem;
+}
+.right-side {
+  margin: 1rem;
+}
+.pick {
+  color: var(--clr-oxford-blue);
+  cursor: pointer;
+}
+.bazar {
+  color: rgb(56, 158, 56);
+  cursor: pointer;
+}
+.products-tag {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid rgb(230, 227, 227);
+  border-radius: 5px;
+  gap: 5px;
+  color: rgb(56, 158, 56);
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.fa-solid.fa-sort-down {
+  margin-left: 30px;
+}
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.details {
+  color: black;
+}
+.details:hover {
+  color: rgb(2, 165, 165);
+}
+.seller {
+  padding: 0.5rem 1rem;
+  background-color: rgb(2, 165, 165);
+  border: 1px solid rgb(2, 165, 165);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.seller:hover {
+  background-color: rgb(4, 139, 139);
+}
+.join {
+  padding: 0.5rem 1rem;
+  background-color: rgb(2, 165, 165);
+  border: 1px solid rgb(2, 165, 165);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.join:hover {
+  background-color: rgb(4, 139, 139);
+}
