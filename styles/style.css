@@ -23,8 +23,8 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
-  /* background-color: rgb(255, 251, 251); */
-  background-color: aqua;
+  background-color: rgb(255, 251, 251);
+  /* background-color: aqua; */
   position: relative;
 }
 li {
@@ -46,9 +46,8 @@ img {
   position: fixed;
   border: 1px solid rgb(255, 251, 251);
   padding-bottom: 10px;
-  padding-right: 2.5rem;
+  padding-right: 6.5rem;
   background-color: rgb(255, 251, 251);
-  
 }
 .left-container {
   display: flex;
@@ -89,7 +88,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-left: 26rem;
+  margin-left: 33rem;
   gap: 1rem;
 }
 .details {
@@ -136,6 +135,7 @@ img {
   background-position: center;
   padding: 11rem;
   /* gap: 0.5rem; */
+  height: 100vh;
 }
 .title {
   font-size: 3rem;
@@ -149,7 +149,8 @@ img {
   margin-top: 2.5rem;
 }
 .search-input {
-  padding: 1rem 15rem;
+  padding: 1rem 1rem;
+  width: 650px;
   font-size: 15px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -162,7 +163,7 @@ img {
   padding-bottom: 16px;
   margin-left: -5px;
   padding-right: 2rem;
-  text-align: center;
+  /* text-align: center; */
   color: #fff;
   border: 1px solid rgb(2, 165, 165);
   border-top-right-radius: 8px;
@@ -249,6 +250,7 @@ img {
   border-bottom: none;
   border-left: none;
   background-color: #fff;
+  height: 90vh;
 }
 .purse {
   width: 12%;
@@ -262,48 +264,60 @@ img {
   cursor: pointer;
   /* position: fixed; */
 }
-/* .bags-container {
-  display: flex;
+.bags-container {
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-} */
-/* .bag-models {
+  align-items: center; */
+  height: 90vh;
+  overflow-y: scroll;
+}
+.bag-models {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  /* align-items: center; */
   padding: 1rem;
   padding: 2rem;
   margin-bottom: -3rem;
   gap: 1rem;
+  /* width: 100%; */
 }
+.bag-models .design {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-self: center;
+}
+
 .bag-style {
+  border-radius: 6px;
+  width: 300px;
   padding: 1rem;
   background-color: #fff;
   border: 1px solid rgb(196, 193, 193);
 }
-.bag-styles {
+/* .bag-styles {
    background-color: #fff;
   border: 1px solid rgb(196, 193, 193);
   
-}
+} */
 .design {
-  width: 100%;
+  /* width: 400px; */
   cursor: pointer;
 }
 .designs {
-  width: 50%;
-
- 
+  /* width: 50%; */
 }
 .cart {
-  width: 30%;
+  width:40%;
   color: rgb(2, 165, 165);
 }
 .shipping-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: -55px;
 }
 .value {
   color: rgb(2, 165, 165);
@@ -311,15 +325,22 @@ img {
 }
 .orders {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
+  gap: 10px;
+  padding: 2px 2px;
   color: rgb(2, 165, 165);
   background-color: #fff;
   border: 1px solid rgb(196, 193, 193);
-  margin-left: 8rem;
+  /* margin-left: 8rem; */
   border-radius: 20px;
+  width: 5.5rem;
+  text-align: center;
+  /* margin-bottom: 15px; */
+}
+
+.orders img {
+  padding-left: 10px;
 }
 .orders:hover {
   background-color: rgb(4, 139, 139);
@@ -330,8 +351,13 @@ img {
   font-size: 16px;
 }
 .percentage {
-  margin-left: 15rem;
-  padding: 0.3rem 0.2rem;
+  /* margin-left: 15rem; */
+  display: flex;
+  justify-content: end;
+}
+
+.percentage span{
+  padding: 0.5rem 0.5rem;
   background-color: var(--clr-tigers-eye);
   border-radius: 20px;
   font-size: 12px;
@@ -339,16 +365,17 @@ img {
   color: #fff;
   cursor: pointer;
 }
-.percentages{
+
+/* .percentages {
   margin: 1rem;
   margin-left: 20rem;
   background-color: var(--clr-tigers-eye);
-  padding: 0.3rem 0.2rem;
+  padding: 1rem 0.75rem;
   font-size: 12px;
   border-radius: 20px;
   color: #fff;
   cursor: pointer;
-}
+} */
 .brand {
   font-size: 14px;
   font-weight: 500;
@@ -368,9 +395,9 @@ img {
 }
 .price {
   margin-bottom: 40px;
-} */
+}
 
-.design {
+/* .design {
   width: 30%;
 }
 .cart {
@@ -379,14 +406,16 @@ img {
 .bags-container {
   padding: 2rem;
   margin: 1rem;
-  background-color: blueviolet;
+  background-color: rgb(246, 240, 240);
 }
 .bag-models {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
   gap: 10px;
 }
 .bag-style {
   display: grid;
   gap: 1rem;
-}
+  background-color: #fff
+} */
